@@ -1,6 +1,6 @@
 # project01.py, Mason Corey
 
-from basicShapes import *
+from basic_shapes import *
 import random
 import math
 
