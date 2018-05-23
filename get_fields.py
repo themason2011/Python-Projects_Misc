@@ -1,4 +1,4 @@
-def getFields(filename):
+def get_fields(filename):
     ''' Input is a filename
     return a list [[motnhs],[days],[names]]
     '''
@@ -27,4 +27,4 @@ def getFields(filename):
     f.close()
     return [months, days, names]
 
-result = getFields('songs.txt')
+result = get_fields('songs.txt')
