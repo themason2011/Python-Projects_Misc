@@ -3,7 +3,7 @@ import pytest
 def minOfTwoLists(alist, blist):  
 
   '''
-  Creates a list with each element being the smallest element at each index, comparing elements in alist and blist. 
+  Returns a list with each element being the smallest element at each index, comparing elements in alist and blist. 
   If both elements are the same size in alist and blist, the element from alist is chosen.
   '''
 
