@@ -1,4 +1,4 @@
-def isPalindrome(string): 
+def is_palindrome(string): 
     string = string.lower() #Makes palindrome lowercase to compare strings
     string1 = string[0:len(string)//2]  #Make string1 first half of string
 
