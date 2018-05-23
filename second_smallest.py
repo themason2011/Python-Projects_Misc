@@ -1,4 +1,4 @@
-def secondSmallest(aList):
+def second_smallest(aList):
     firstSmallest = aList[0]
     firstSmallestIndex = 0
 
