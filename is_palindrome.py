@@ -1,4 +1,4 @@
-def isPalindrome(string): #O(n?)
+def isPalindrome(string): #O(n/2) -> O(n)
     string = string.lower() #Makes palindrome lowercase to compare strings
     string = string.replace(' ','')
     string1 = string[0:len(string)//2]  #Make string1 first half of string
