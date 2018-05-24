@@ -1,4 +1,4 @@
-def is_palindrome(string): 
+def isPalindrome(string): #O(n?)
     string = string.lower() #Makes palindrome lowercase to compare strings
     string1 = string[0:len(string)//2]  #Make string1 first half of string
 
@@ -16,3 +16,14 @@ def is_palindrome(string):
         return True
     else:
         return False
+
+def isPalindrome_norm(string): #O(n/2) -> O(n)
+    string = string.lower()  #Make palindrome lowercase
+    string = string.replace(' ', '') #Remove all spaces from the string
+    if(string=='' or len(string)==1): #Handles special cases
+        return True
+
+    for i in range(len(string)//2): #Compares first and last character, excluding middle if odd
+        if(string[i] != string[len(string)-i-1]):
+            return False
+    return True
