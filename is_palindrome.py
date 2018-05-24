@@ -27,3 +27,26 @@ def isPalindrome_norm(string): #O(n/2) -> O(n)
         if(string[i] != string[len(string)-i-1]):
             return False
     return True
+
+def isPalindrome_rec(string): #O(n)
+    #Returns whether or not a string is a palindrome using recursion
+    
+    stringList = list(string)
+
+    if string == '' or len(stringList)==1:
+        return True
+
+    while ' ' in stringList:
+        for item in stringList:
+            if ' ' in stringList:
+                space = stringList.index(' ')
+                stringList.pop(space)
+
+    if stringList[0].lower() == stringList[len(stringList)-1].lower(): 
+        #Check to make sure each letter at the beginning adn end of the string is the same
+        stringList.pop(0)
+        stringList.pop(len(stringList)-1)
+        return isPalindrome_rec(stringList)
+
+    else:
+        return False
