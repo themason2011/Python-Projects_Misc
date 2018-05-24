@@ -1,5 +1,6 @@
 def isPalindrome(string): #O(n?)
     string = string.lower() #Makes palindrome lowercase to compare strings
+    string = string.replace(' ','')
     string1 = string[0:len(string)//2]  #Make string1 first half of string
 
     #Make string2 second half of string
